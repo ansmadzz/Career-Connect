@@ -1,4 +1,3 @@
-
 /* =====================================================
    CAREERCONNECT - MULTI-USER FRONT-END DEMO
    Each account has its own personal workspace.
@@ -16,82 +15,578 @@ const jobs = [
   {
     id: 1,
     title: "Frontend Developer",
+    department: "Information Technology",
     company: "BrightLabs",
     location: "Kuala Lumpur",
     salary: "RM 4,000 – RM 6,000",
     type: "Full-time",
     skills: ["HTML", "CSS", "JavaScript"],
+    description: "Build and maintain responsive website interfaces and improve user experience.",
     match: 95
   },
   {
     id: 2,
     title: "UI/UX Designer",
+    department: "Design & Creative",
     company: "Pixel Studio",
     location: "Petaling Jaya",
     salary: "RM 3,500 – RM 5,000",
     type: "Full-time",
     skills: ["Figma", "UI Design", "Prototyping"],
+    description: "Create wireframes, user flows and visual designs for digital products.",
     match: 90
   },
   {
     id: 3,
     title: "Web Developer Intern",
+    department: "Information Technology",
     company: "Nexa Digital",
     location: "Shah Alam",
     salary: "RM 1,200 – RM 1,800",
     type: "Internship",
     skills: ["HTML", "CSS", "PHP"],
+    description: "Assist with website updates, testing and basic front-end development.",
     match: 88
   },
   {
     id: 4,
     title: "Software Engineer",
+    department: "Information Technology",
     company: "CloudTech",
     location: "Cyberjaya",
     salary: "RM 4,500 – RM 7,000",
     type: "Full-time",
     skills: ["JavaScript", "Python", "SQL"],
+    description: "Develop software features, troubleshoot issues and maintain applications.",
     match: 82
   },
   {
     id: 5,
     title: "Digital Marketing Intern",
+    department: "Marketing",
     company: "Mosaic Media",
     location: "Remote",
     salary: "RM 1,000 – RM 1,500",
     type: "Internship",
     skills: ["SEO", "Marketing", "Analytics"],
+    description: "Support online campaigns, prepare content and monitor digital engagement.",
     match: 78
   },
   {
     id: 6,
     title: "Product Designer",
+    department: "Design & Creative",
     company: "Orbit Systems",
     location: "Kuala Lumpur",
     salary: "RM 5,000 – RM 7,500",
     type: "Full-time",
     skills: ["Figma", "UX Research", "Design"],
+    description: "Research user needs and design clear, accessible product experiences.",
     match: 75
   },
   {
     id: 7,
     title: "IT Support Assistant",
+    department: "Information Technology",
     company: "Northstar Group",
     location: "Shah Alam",
     salary: "RM 2,500 – RM 3,400",
     type: "Full-time",
     skills: ["Troubleshooting", "Networking", "Support"],
+    description: "Help staff troubleshoot devices, software and basic network issues.",
     match: 84
   },
   {
     id: 8,
     title: "Content Creator",
+    department: "Media & Communications",
     company: "Mosaic Media",
     location: "Remote",
     salary: "RM 1,800 – RM 2,500",
     type: "Part-time",
     skills: ["Content", "Canva", "Video"],
+    description: "Create short-form videos, captions and engaging content for social platforms.",
     match: 80
+  },
+  {
+    "id": 9,
+    "title": "Account Executive",
+    "department": "Finance",
+    "company": "Apex Advisory",
+    "location": "Kuala Lumpur",
+    "salary": "RM 3,000 – RM 4,200",
+    "type": "Full-time",
+    "skills": ["Accounting", "Excel", "Bookkeeping"],
+    "match": 82,
+    "description": "Prepare invoices, update financial records and assist with monthly accounts."
+  },
+  {
+    "id": 10,
+    "title": "Junior Accountant",
+    "department": "Finance",
+    "company": "LedgerWorks",
+    "location": "Petaling Jaya",
+    "salary": "RM 3,200 – RM 4,500",
+    "type": "Full-time",
+    "skills": ["SQL Accounting", "Financial Reports", "Reconciliation"],
+    "match": 80,
+    "description": "Maintain ledgers, reconcile transactions and prepare financial statements."
+  },
+  {
+    "id": 11,
+    "title": "Audit Assistant",
+    "department": "Finance",
+    "company": "Grant & Co.",
+    "location": "Shah Alam",
+    "salary": "RM 2,800 – RM 3,800",
+    "type": "Full-time",
+    "skills": ["Auditing", "Documentation", "Attention to Detail"],
+    "match": 78,
+    "description": "Check financial documents, prepare audit schedules and support audit fieldwork."
+  },
+  {
+    "id": 12,
+    "title": "Payroll Executive",
+    "department": "Human Resources",
+    "company": "PeopleFirst Group",
+    "location": "Kuala Lumpur",
+    "salary": "RM 3,000 – RM 4,000",
+    "type": "Full-time",
+    "skills": ["Payroll", "HRIS", "Employment Act"],
+    "match": 81,
+    "description": "Process monthly payroll, manage employee claims and maintain salary records."
+  },
+  {
+    "id": 13,
+    "title": "Talent Acquisition Intern",
+    "department": "Human Resources",
+    "company": "NextTalent Malaysia",
+    "location": "Cyberjaya",
+    "salary": "RM 900 – RM 1,300",
+    "type": "Internship",
+    "skills": ["Recruitment", "Communication", "Scheduling"],
+    "match": 86,
+    "description": "Post vacancies, screen applications and coordinate interview sessions."
+  },
+  {
+    "id": 14,
+    "title": "HR Executive",
+    "department": "Human Resources",
+    "company": "Evergreen Holdings",
+    "location": "Shah Alam",
+    "salary": "RM 3,200 – RM 4,500",
+    "type": "Full-time",
+    "skills": ["Employee Relations", "HR Administration", "Onboarding"],
+    "match": 83,
+    "description": "Handle staff records, onboarding, leave administration and employee enquiries."
+  },
+  {
+    "id": 15,
+    "title": "Social Media Executive",
+    "department": "Marketing",
+    "company": "Mosaic Media",
+    "location": "Kuala Lumpur",
+    "salary": "RM 3,000 – RM 4,200",
+    "type": "Full-time",
+    "skills": ["Social Media", "Copywriting", "Analytics"],
+    "match": 91,
+    "description": "Plan social media calendars, create posts and review campaign performance."
+  },
+  {
+    "id": 16,
+    "title": "Graphic Designer",
+    "department": "Marketing & Creative",
+    "company": "Studio Nadi",
+    "location": "Petaling Jaya",
+    "salary": "RM 2,800 – RM 4,000",
+    "type": "Full-time",
+    "skills": ["Adobe Illustrator", "Photoshop", "Branding"],
+    "match": 88,
+    "description": "Design posters, brochures, digital advertisements and marketing materials."
+  },
+  {
+    "id": 17,
+    "title": "Public Relations Assistant",
+    "department": "Marketing & Communications",
+    "company": "BrightPath Communications",
+    "location": "Kuala Lumpur",
+    "salary": "RM 2,500 – RM 3,400",
+    "type": "Full-time",
+    "skills": ["Media Relations", "Writing", "Event Support"],
+    "match": 79,
+    "description": "Draft press materials, coordinate media activities and support public events."
+  },
+  {
+    "id": 18,
+    "title": "Market Research Assistant",
+    "department": "Marketing",
+    "company": "InsightPoint Research",
+    "location": "Remote",
+    "salary": "RM 2,200 – RM 3,200",
+    "type": "Full-time",
+    "skills": ["Surveys", "Research", "Data Analysis"],
+    "match": 77,
+    "description": "Conduct market surveys, organise findings and prepare research summaries."
+  },
+  {
+    "id": 19,
+    "title": "Sales Representative",
+    "department": "Sales",
+    "company": "Nova Consumer Products",
+    "location": "Shah Alam",
+    "salary": "RM 2,500 – RM 3,500 + commission",
+    "type": "Full-time",
+    "skills": ["Negotiation", "Customer Relations", "Sales"],
+    "match": 84,
+    "description": "Meet potential customers, explain products and achieve monthly sales targets."
+  },
+  {
+    "id": 20,
+    "title": "Business Development Executive",
+    "department": "Sales & Business Development",
+    "company": "Elevate Solutions",
+    "location": "Kuala Lumpur",
+    "salary": "RM 3,500 – RM 5,000",
+    "type": "Full-time",
+    "skills": ["Lead Generation", "Networking", "Presentations"],
+    "match": 85,
+    "description": "Identify new clients, prepare proposals and build long-term business relationships."
+  },
+  {
+    "id": 21,
+    "title": "Retail Sales Assistant",
+    "department": "Retail",
+    "company": "Urban Living Store",
+    "location": "Petaling Jaya",
+    "salary": "RM 1,800 – RM 2,400",
+    "type": "Part-time",
+    "skills": ["Customer Service", "POS", "Merchandising"],
+    "match": 80,
+    "description": "Assist shoppers, arrange product displays and process purchases at the cashier."
+  },
+  {
+    "id": 22,
+    "title": "Administrative Assistant",
+    "department": "Administration",
+    "company": "Crescent Services",
+    "location": "Shah Alam",
+    "salary": "RM 2,000 – RM 2,800",
+    "type": "Full-time",
+    "skills": ["Filing", "Microsoft Office", "Scheduling"],
+    "match": 87,
+    "description": "Manage correspondence, organise files and support daily office operations."
+  },
+  {
+    "id": 23,
+    "title": "Personal Assistant",
+    "department": "Administration",
+    "company": "Meridian Group",
+    "location": "Kuala Lumpur",
+    "salary": "RM 3,000 – RM 4,200",
+    "type": "Full-time",
+    "skills": ["Calendar Management", "Communication", "Confidentiality"],
+    "match": 78,
+    "description": "Arrange meetings, manage schedules and prepare documents for management."
+  },
+  {
+    "id": 24,
+    "title": "Data Entry Clerk",
+    "department": "Administration",
+    "company": "MetroLink Services",
+    "location": "Remote",
+    "salary": "RM 1,800 – RM 2,500",
+    "type": "Contract",
+    "skills": ["Data Entry", "Accuracy", "Microsoft Excel"],
+    "match": 76,
+    "description": "Enter, verify and update information in company records and databases."
+  },
+  {
+    "id": 25,
+    "title": "Customer Service Officer",
+    "department": "Customer Service",
+    "company": "CareLine Malaysia",
+    "location": "Cyberjaya",
+    "salary": "RM 2,300 – RM 3,200",
+    "type": "Full-time",
+    "skills": ["Communication", "Problem Solving", "CRM"],
+    "match": 89,
+    "description": "Answer customer questions, resolve complaints and record service requests."
+  },
+  {
+    "id": 26,
+    "title": "Call Centre Agent",
+    "department": "Customer Service",
+    "company": "ConnectPlus",
+    "location": "Kuala Lumpur",
+    "salary": "RM 2,200 – RM 3,000",
+    "type": "Full-time",
+    "skills": ["Call Handling", "Active Listening", "CRM"],
+    "match": 82,
+    "description": "Handle inbound calls, provide product information and follow up on customer cases."
+  },
+  {
+    "id": 27,
+    "title": "Primary School Teacher",
+    "department": "Education",
+    "company": "Bright Future Academy",
+    "location": "Shah Alam",
+    "salary": "RM 2,500 – RM 3,500",
+    "type": "Full-time",
+    "skills": ["Lesson Planning", "Classroom Management", "Teaching"],
+    "match": 86,
+    "description": "Prepare lessons, teach core subjects and assess pupils' learning progress."
+  },
+  {
+    "id": 28,
+    "title": "Training Coordinator",
+    "department": "Education & Training",
+    "company": "SkillBridge Centre",
+    "location": "Petaling Jaya",
+    "salary": "RM 2,800 – RM 3,800",
+    "type": "Full-time",
+    "skills": ["Training", "Coordination", "Documentation"],
+    "match": 80,
+    "description": "Arrange training sessions, prepare materials and track participant attendance."
+  },
+  {
+    "id": 29,
+    "title": "Clinic Receptionist",
+    "department": "Healthcare",
+    "company": "WellCare Clinic",
+    "location": "Kuala Lumpur",
+    "salary": "RM 1,900 – RM 2,600",
+    "type": "Full-time",
+    "skills": ["Patient Registration", "Scheduling", "Customer Service"],
+    "match": 84,
+    "description": "Register patients, arrange appointments and manage front-desk enquiries."
+  },
+  {
+    "id": 30,
+    "title": "Pharmacy Assistant",
+    "department": "Healthcare",
+    "company": "HealthPlus Pharmacy",
+    "location": "Shah Alam",
+    "salary": "RM 2,000 – RM 2,800",
+    "type": "Full-time",
+    "skills": ["Inventory", "Customer Care", "Retail"],
+    "match": 78,
+    "description": "Assist customers, organise medicine stock and support pharmacy operations under supervision."
+  },
+  {
+    "id": 31,
+    "title": "Medical Records Assistant",
+    "department": "Healthcare Administration",
+    "company": "City Medical Centre",
+    "location": "Cyberjaya",
+    "salary": "RM 2,200 – RM 3,000",
+    "type": "Full-time",
+    "skills": ["Records Management", "Data Entry", "Confidentiality"],
+    "match": 87,
+    "description": "Maintain patient files, update records and ensure documents are properly organised."
+  },
+  {
+    "id": 32,
+    "title": "Mechanical Engineer",
+    "department": "Engineering",
+    "company": "Axis Manufacturing",
+    "location": "Shah Alam",
+    "salary": "RM 3,800 – RM 5,500",
+    "type": "Full-time",
+    "skills": ["AutoCAD", "Maintenance", "Engineering"],
+    "match": 82,
+    "description": "Support equipment design, inspect machinery and improve production processes."
+  },
+  {
+    "id": 33,
+    "title": "Civil Engineering Assistant",
+    "department": "Engineering & Construction",
+    "company": "BuildRight Consultants",
+    "location": "Kuala Lumpur",
+    "salary": "RM 2,800 – RM 4,000",
+    "type": "Full-time",
+    "skills": ["AutoCAD", "Site Inspection", "Technical Drawing"],
+    "match": 79,
+    "description": "Assist with site inspections, technical drawings and construction documentation."
+  },
+  {
+    "id": 34,
+    "title": "Quality Control Inspector",
+    "department": "Manufacturing",
+    "company": "PrecisionWorks",
+    "location": "Shah Alam",
+    "salary": "RM 2,300 – RM 3,200",
+    "type": "Full-time",
+    "skills": ["Quality Checks", "Reporting", "Manufacturing"],
+    "match": 83,
+    "description": "Inspect finished products, record defects and ensure quality standards are met."
+  },
+  {
+    "id": 35,
+    "title": "Logistics Coordinator",
+    "department": "Logistics & Supply Chain",
+    "company": "SwiftRoute Logistics",
+    "location": "Petaling Jaya",
+    "salary": "RM 2,700 – RM 3,800",
+    "type": "Full-time",
+    "skills": ["Shipment Tracking", "Coordination", "Excel"],
+    "match": 85,
+    "description": "Coordinate deliveries, monitor shipments and communicate with drivers and suppliers."
+  },
+  {
+    "id": 36,
+    "title": "Warehouse Assistant",
+    "department": "Logistics & Supply Chain",
+    "company": "NorthGate Distribution",
+    "location": "Shah Alam",
+    "salary": "RM 1,900 – RM 2,600",
+    "type": "Full-time",
+    "skills": ["Stock Control", "Packing", "Inventory"],
+    "match": 80,
+    "description": "Receive goods, prepare orders and maintain accurate warehouse stock records."
+  },
+  {
+    "id": 37,
+    "title": "Procurement Executive",
+    "department": "Procurement",
+    "company": "PrimeSource Trading",
+    "location": "Kuala Lumpur",
+    "salary": "RM 3,000 – RM 4,300",
+    "type": "Full-time",
+    "skills": ["Vendor Management", "Purchasing", "Negotiation"],
+    "match": 81,
+    "description": "Request quotations, compare suppliers and process purchase orders."
+  },
+  {
+    "id": 38,
+    "title": "Hotel Front Desk Officer",
+    "department": "Hospitality & Tourism",
+    "company": "Serene Suites",
+    "location": "Kuala Lumpur",
+    "salary": "RM 2,100 – RM 2,900",
+    "type": "Full-time",
+    "skills": ["Guest Relations", "Reservations", "Communication"],
+    "match": 84,
+    "description": "Welcome guests, manage check-ins and respond to booking enquiries."
+  },
+  {
+    "id": 39,
+    "title": "Event Coordinator",
+    "department": "Events & Hospitality",
+    "company": "Gather Events",
+    "location": "Petaling Jaya",
+    "salary": "RM 2,600 – RM 3,600",
+    "type": "Contract",
+    "skills": ["Event Planning", "Vendor Coordination", "Budgeting"],
+    "match": 88,
+    "description": "Coordinate event schedules, liaise with vendors and manage event-day arrangements."
+  },
+  {
+    "id": 40,
+    "title": "Chef Assistant",
+    "department": "Food & Beverage",
+    "company": "The Garden Bistro",
+    "location": "Shah Alam",
+    "salary": "RM 1,900 – RM 2,600",
+    "type": "Full-time",
+    "skills": ["Food Preparation", "Kitchen Safety", "Teamwork"],
+    "match": 77,
+    "description": "Prepare ingredients, maintain kitchen cleanliness and assist chefs during service."
+  },
+  {
+    "id": 41,
+    "title": "Legal Secretary",
+    "department": "Legal",
+    "company": "Carter & Lim Legal",
+    "location": "Kuala Lumpur",
+    "salary": "RM 2,500 – RM 3,500",
+    "type": "Full-time",
+    "skills": ["Legal Documents", "Filing", "Scheduling"],
+    "match": 78,
+    "description": "Format legal documents, arrange appointments and maintain confidential case files."
+  },
+  {
+    "id": 42,
+    "title": "Compliance Assistant",
+    "department": "Legal & Compliance",
+    "company": "TrustMark Services",
+    "location": "Cyberjaya",
+    "salary": "RM 2,800 – RM 3,900",
+    "type": "Full-time",
+    "skills": ["Compliance", "Documentation", "Research"],
+    "match": 80,
+    "description": "Review company documents, maintain compliance records and support internal checks."
+  },
+  {
+    "id": 43,
+    "title": "Interior Design Assistant",
+    "department": "Design & Architecture",
+    "company": "FormSpace Studio",
+    "location": "Petaling Jaya",
+    "salary": "RM 2,500 – RM 3,600",
+    "type": "Full-time",
+    "skills": ["SketchUp", "Mood Boards", "Space Planning"],
+    "match": 86,
+    "description": "Prepare design presentations, source materials and assist with space-planning projects."
+  },
+  {
+    "id": 44,
+    "title": "Photographer / Videographer",
+    "department": "Creative & Media",
+    "company": "FrameHouse Studio",
+    "location": "Remote",
+    "salary": "RM 2,200 – RM 3,500",
+    "type": "Contract",
+    "skills": ["Photography", "Video Editing", "Lighting"],
+    "match": 83,
+    "description": "Capture photos and videos, edit content and prepare media for client projects."
+  },
+  {
+    "id": 45,
+    "title": "Research Assistant",
+    "department": "Research & Development",
+    "company": "Vista Research Centre",
+    "location": "Cyberjaya",
+    "salary": "RM 2,400 – RM 3,400",
+    "type": "Contract",
+    "skills": ["Research", "Report Writing", "Data Collection"],
+    "match": 81,
+    "description": "Collect information, review sources and prepare findings for research projects."
+  },
+  {
+    "id": 46,
+    "title": "Environmental Officer",
+    "department": "Environment & Sustainability",
+    "company": "GreenEarth Services",
+    "location": "Shah Alam",
+    "salary": "RM 3,000 – RM 4,200",
+    "type": "Full-time",
+    "skills": ["Environmental Audits", "Safety", "Reporting"],
+    "match": 79,
+    "description": "Monitor environmental practices, conduct site checks and prepare sustainability reports."
+  },
+  {
+    "id": 47,
+    "title": "Insurance Claims Assistant",
+    "department": "Insurance",
+    "company": "SecureLife Assurance",
+    "location": "Kuala Lumpur",
+    "salary": "RM 2,400 – RM 3,300",
+    "type": "Full-time",
+    "skills": ["Claims Processing", "Documentation", "Customer Service"],
+    "match": 82,
+    "description": "Review claim submissions, request supporting documents and update claim records."
+  },
+  {
+    "id": 48,
+    "title": "Real Estate Negotiator",
+    "department": "Property & Real Estate",
+    "company": "KeyStone Properties",
+    "location": "Petaling Jaya",
+    "salary": "RM 2,000 – RM 3,000 + commission",
+    "type": "Full-time",
+    "skills": ["Property Sales", "Negotiation", "Client Relations"],
+    "match": 80,
+    "description": "Arrange property viewings, assist buyers and sellers and prepare listing information."
   }
 ];
 
@@ -901,7 +1396,6 @@ function renderDashboardInterviews() {
 
         return `
           <div class="compact-item">
-
             <div class="compact-date">
               <strong>${date.day}</strong>
               <small>${date.month}</small>
@@ -943,6 +1437,9 @@ function filteredJobs() {
     .value.trim()
     .toLowerCase();
 
+  const department =
+    document.getElementById("departmentFilter").value;
+
   const location =
     document.getElementById("locationFilter").value;
 
@@ -951,14 +1448,20 @@ function filteredJobs() {
 
   return jobs.filter(job => {
 
+    const searchableText = [
+      job.title,
+      job.department,
+      job.company,
+      job.location,
+      job.description,
+      ...job.skills
+    ].join(" ").toLowerCase();
+
     const matchesKeyword =
-      !keyword ||
-      [
-        job.title,
-        job.company,
-        job.location,
-        ...job.skills
-      ].join(" ").toLowerCase().includes(keyword);
+      !keyword || searchableText.includes(keyword);
+
+    const matchesDepartment =
+      !department || job.department === department;
 
     const matchesLocation =
       !location || job.location === location;
@@ -967,6 +1470,7 @@ function filteredJobs() {
       !type || job.type === type;
 
     return matchesKeyword &&
+      matchesDepartment &&
       matchesLocation &&
       matchesType;
   });
@@ -1014,6 +1518,14 @@ function jobCard(job) {
 
         <p class="company-name">
           ${escapeHTML(job.company)}
+        </p>
+
+        <span class="department-pill">
+          ${escapeHTML(job.department || "General")}
+        </span>
+
+        <p class="job-description">
+          ${escapeHTML(job.description || "Contribute to daily team activities and support departmental goals.")}
         </p>
 
         <div class="job-meta">
@@ -1084,7 +1596,7 @@ function displayJobs() {
 
 
 /* SEARCH INPUTS */
-["jobSearch", "locationFilter", "typeFilter"]
+["jobSearch", "departmentFilter", "locationFilter", "typeFilter"]
   .forEach(id => {
 
     document.getElementById(id)
@@ -1097,6 +1609,7 @@ document.getElementById("clearFilters")
   .addEventListener("click", () => {
 
     document.getElementById("jobSearch").value = "";
+    document.getElementById("departmentFilter").value = "";
     document.getElementById("locationFilter").value = "";
     document.getElementById("typeFilter").value = "";
 
@@ -1606,3 +2119,4 @@ function restoreSession() {
 
 /* START APPLICATION */
 restoreSession();
+
